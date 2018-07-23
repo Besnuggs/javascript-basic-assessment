@@ -4,7 +4,9 @@ var hello = "goodbye"
 
 
 // #2 Use the variable iLove to create a new variable called iLoveCode that is assigned the string "I love code"
-var iLove = 'I love';
+var iLoveCode = "I love code";
+var iLove = iLoveCode;
+
 
 // #3  Make an object called bob and give it the following properties
 // bob has a height of 6ft (string)
@@ -12,11 +14,17 @@ var iLove = 'I love';
 // bob has hair, that has style spikey, and color brown (object)
 // bob is not presidentOfTheUnitedStates (boolean)
 // bob likes apples, bananas, and cherries (array of strings)
+var bob = {height: "6ft", 
+		   age: 24,
+		   hair: {style: "spikey",
+				  color: "brown"},
+				}	
+
 
 
 // #4 Change my shirt color to pink using dot notation
 var myShirt = {
-	type: 'polo',
+	type: 'polo',				
 	color: 'red'
 };
 
