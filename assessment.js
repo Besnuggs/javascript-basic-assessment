@@ -80,13 +80,13 @@ var heroes = ['superman', 'batman', 'flash'];
 // add 'wonderwoman' to the end
 heroes.push('wonderwoman');
 // remove 'superman' and store him in a variable called firstHero
-var firstHero = heroes.shift('superman');
+var firstHero = heroes.shift();
 // add 'spongebob' to the start of the array
 heroes.unshift('spongebob');
 // remove 'flash' from the array and store him in a variable called secondHero
 var secondHero = heroes.splice(2,1);
 // leave batman in the array but put a copy of him on a variable called thirdHero
-var thirdHero = heroes.slice(1,2);
+var thirdHero = heroes[1];
 
 
 
@@ -140,9 +140,9 @@ return {
 // #14 Create a function called coderTest that takes in an object that is a person. It looks to see if the person’s name is Jeremy and then changes the person object to have a property called lovesCode with a value of 10.  If their name is Brack set lovesCode to 0.  otherwise set lovesCode to 5.
 function coderTest (person){
  if(person.name === "Jeremy") {
-	  obj['lovesCode'] = 10;
+	  person['lovesCode'] = 10;
  } else if (person.name === "Brack") {
-	  obj['lovesCode'] = 0;
+	  person['lovesCode'] = 0;
  } else {person['lovesCode'] = 5;
 }
 }
@@ -176,7 +176,7 @@ function outside (temperature, humidity, cloudiness) {
 // example - If I call you with 'Give it' you should invoke holla with 'Give it back'
 
 function callerBack (holla, back) {
-	return holla(back + " back.");
+	return holla(back + " back");
 }	function holla(back) {
 	return back;
 }
